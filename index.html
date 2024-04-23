@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Motor Sigma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jcarousel.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link href="skins/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="ico/favicon.png" />
+    <style>
+        .nivo-directionNav {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- toggle top area -->
+        <div class="hidden-top">
+            <div class="hidden-top-inner container">
+                <div class="row">
+                    <div class="span12">
+                        <ul>
+                            <li><strong>We are available for any custom works this month</strong></li>
+                            <li>Main office: Springville center X264, Park Ave S.01</li>
+                            <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end toggle top area -->
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div class="row nomargin">
+                    <div class="span12">
+                        <div class="headnav">
+                            <ul>
+                                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                                <li><a href="#mySignin" data-toggle="modal">Log in</a></li>
+                            </ul>
+                        </div>
+                        <!-- Signup Modal -->
+                        <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="mySignupModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputEmail">Email</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupPassword">Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSignupPassword" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSignupPassword2" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn">Sign up</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            Already have an account? <a href="#mySignin" data-dismiss="modal"
+                                                aria-hidden="true" data-toggle="modal">Sign in</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end signup modal -->
+                        <!-- Sign in Modal -->
+                        <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="mySigninModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputText">Username</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputText" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputSigninPassword">Password</label>
+                                        <div class="controls">
+                                            <input type="password" id="inputSigninPassword" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn">Sign in</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true"
+                                                data-toggle="modal">Reset</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end signin modal -->
+                        <!-- Reset Modal -->
+                        <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog"
+                            aria-labelledby="myResetModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputResetEmail">Email</label>
+                                        <div class="controls">
+                                            <input type="text" id="inputResetEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn">Reset password</button>
+                                        </div>
+                                        <p class="aligncenter margintop20">
+                                            We will send instructions on how to reset your password to your inbox
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end reset modal -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <div class="logo">
+                            <h1 style="font-size: 20px; font-weight: bold;">Motor Sigma</h1>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="navbar navbar-static-top">
+                            <div class="navigation">
+                                <nav>
+                                    <ul class="nav topnav">
+                                        <li>
+                                            <a href="#about-us">Tentang Kami</a>
+                                        </li>
+                                        <li>
+                                            <a href="#gallery">Galeri</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Kontak</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end navigation -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <section id="featured">
+            <!-- start slider -->
+            <!-- Slider -->
+            <div id="nivo-slider">
+                <div class="nivo-slider" style="height: 800px;">
+                    <img src="img/bg-index.jpg" alt="" title="#caption-1" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <!-- Slide #1 caption -->
+                            <div class="nivo-caption" id="caption-1">
+                                <div>
+                                    <h2>Tentang <strong>Kami</strong></h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget.
+                                        Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec
+                                        vivamus.
+                                    </p>
+                                    <a href="#" class="btn btn-theme">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end slider -->
+        </section>
+        <section id="about-us" style="padding-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h2>Apa itu <strong>Motor Sigma?</strong></h2>
+                        <p>
+                            Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur
+                            philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo
+                            accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
+                        </p>
+                        <p>
+                            Iudico definiebas eos ea, dicat inermis hendrerit vel ei, legimus copiosae quo at. Per
+                            utinam corrumpit prodesset te, liber praesent eos an. An prodesset neglegentur qui, usu
+                            ancillae posidonium in, mea ex eros animal scribentur. Et simul fabellas sit.
+                            Populo inimicus ne est.
+                        </p>
+                        <p>
+                            Alii wisi phaedrum quo te, duo cu alia neglegentur. Quo nonumy detraxit cu, viderer
+                            reformidans ut eos, lobortis euripidis posidonium et usu. Sed meis bonorum minimum cu, stet
+                            aperiam qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur mediocrem.
+                            Nam saepe appetere ut, veritus graecis minimum no vim. Vidisse impedit id per.
+                        </p>
+                    </div>
+                    <div class="span6">
+                        <!-- start flexslider -->
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="img/bg-index.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="img/bg-index.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="img/bg-index.jpg" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end flexslider -->
+                    </div>
+                </div>
+                <!-- divider -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+                <!-- end divider -->
+                <div class="row">
+                    <div class="span12">
+                        <h4>Orang - Orang Bertalenta di Motor Sigma</h4>
+                    </div>
+                    <div class="span3">
+                        <img src="img/bg-index.jpg" alt="" class="img-polaroid" />
+                        <div class="roles">
+                            <p class="lead">
+                                <strong>Mr. Sigma Skibidi Toilet</strong>
+                            </p>
+                            <p>
+                                CEO - Founder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <img src="img/bg-index.jpg" alt="" class="img-polaroid" />
+                        <div class="roles">
+                            <p class="lead">
+                                <strong>Skibidi Toilet Jr.</strong>
+                            </p>
+                            <p>
+                                Machine Engineer
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <img src="img/bg-index.jpg" alt="" class="img-polaroid" />
+                        <div class="roles">
+                            <p class="lead">
+                                <strong>Baby Gronk</strong>
+                            </p>
+                            <p>
+                                Machine Designer
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <img src="img/bg-index.jpg" alt="" class="img-polaroid" />
+                        <div class="roles">
+                            <p class="lead">
+                                <strong>Sussy Amongus</strong>
+                            </p>
+                            <p>
+                                Machine Scientitst
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- divider -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+                <!-- end divider -->
+            </div>
+        </section>
+        <h3 class="text-center" style="margin: 15px 0; font-weight: bold;">Visi dan Misi</h3>
+        <section id="gallery" style="padding-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="row">
+                            <div class="span3">
+                                <div class="box aligncenter">
+                                    <div class="aligncenter icon">
+                                        <i class="icon-briefcase icon-circled icon-64 active"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h6>Kerja Sama</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea
+                                            facilisis.
+                                        </p>
+                                        <a href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="box aligncenter">
+                                    <div class="aligncenter icon">
+                                        <i class="icon-wrench icon-circled icon-64 active"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h6>Servis Terbaik</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea
+                                            facilisis.
+                                        </p>
+                                        <a href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="box aligncenter">
+                                    <div class="aligncenter icon">
+                                        <i class="icon-money icon-circled icon-64 active"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h6>Harga Terjangkau</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea
+                                            facilisis.
+                                        </p>
+                                        <a href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="box aligncenter">
+                                    <div class="aligncenter icon">
+                                        <i class="icon-thumbs-up icon-circled icon-64 active"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h6>Jaminan Garansi</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea
+                                            facilisis.
+                                        </p>
+                                        <a href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- divider -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+                <!-- end divider -->
+                <!-- Portfolio Projects -->
+                <div class="row">
+                    <div class="span12">
+                        <h4 class="heading text-center"><strong>Galeri Foto</strong></h4>
+                        <div class="row">
+                            <section id="projects">
+                                <ul id="thumbs" class="portfolio">
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                    <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                                        <img src="img/bg-index.jpg"
+                                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" style="padding-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h4 class="text-center">Tertarik dengan Motor Sigma? <strong>Hubungi kami!</strong></h4>
+
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+
+                            <div class="row">
+                                <div class="span4 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="span4 form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" data-rule="email"
+                                        data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="span4 form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="span12 margintop10 form-group">
+                                    <textarea class="form-control" name="message" rows="12" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                    <p class="text-center">
+                                        <button class="btn btn-large btn-theme margintop10" type="submit">Submit
+                                            message</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SMK%20Negeri%202%20Surakarta+(SMK%20Negeri%202%20Surakarta)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/">gps systems</a></iframe></div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Browse pages</h5>
+                            <ul class="link-list">
+                                <li><a href="#">About our company</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Meet our team</a></li>
+                                <li><a href="#">Explore our portfolio</a></li>
+                                <li><a href="#">Get in touch with us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Important stuff</h5>
+                            <ul class="link-list">
+                                <li><a href="#">Press release</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Career center</a></li>
+                                <li><a href="#">Flattern forum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Flickr photostream</h5>
+                            <div class="flickr_badge">
+                                <script type="text/javascript"
+                                    src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="widget">
+                            <h5 class="widgetheading">Get in touch with us</h5>
+                            <address>
+                                <strong>Flattern studio, Pte Ltd</strong><br>
+                                Springville center X264, Park Ave S.01<br>
+                                Semarang 16425 Indonesia
+                            </address>
+                            <p>
+                                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                                <i class="icon-envelope-alt"></i> email@domainname.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="span6">
+                            <div class="copyright">
+                                <p>
+                                    <span>&copy; Motor Sigma - All right reserved.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <ul class="social-network">
+                                <li><a href="#" data-placement="bottom" title="Facebook"><i
+                                            class="icon-facebook icon-square"></i></a></li>
+                                <li><a href="#" data-placement="bottom" title="Twitter"><i
+                                            class="icon-twitter icon-square"></i></a></li>
+                                <li><a href="#" data-placement="bottom" title="Linkedin"><i
+                                            class="icon-linkedin icon-square"></i></a></li>
+                                <li><a href="#" data-placement="bottom" title="Pinterest"><i
+                                            class="icon-pinterest icon-square"></i></a></li>
+                                <li><a href="#" data-placement="bottom" title="Google plus"><i
+                                            class="icon-google-plus icon-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/portfolio/jquery.quicksand.js"></script>
+    <script src="js/portfolio/setting.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/animate.js"></script>
+
+    <!-- Template Custom JavaScript File -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
